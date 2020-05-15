@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
-import {loginThunkCreator, setIsAuth} from "../../redux/Auth-reducer";
+import {loginThunkCreator, setErrorMsg, setIsAuth} from "../../redux/Auth-reducer";
 import Login from "./Login";
 
 
-
 let LoginContainer = (props) => {
-    const onSubmit=(formData)=>{
-        props.loginThunkCreator(formData.username,formData.password);
+    useEffect(() => {
+        {
+            return ()=>{props.setErrorMsg('')}
+        }
+    }, []);
+    const onSubmit = (formData) => {
+        props.loginThunkCreator(formData.username, formData.password);
     };
-    if(props.isAuth){
+    if (props.isAuth) {
         return <Redirect to={'/home'}/>
     }
     return (
@@ -19,10 +23,10 @@ let LoginContainer = (props) => {
         </div>)
 
 };
-let mapStateToProps=(state)=>{
-    return{
+let mapStateToProps = (state) => {
+    return {
         isAuth: state.auth.isAuth,
         errorMsg: state.auth.errorMsg,
     }
 };
-export default connect(mapStateToProps,{setIsAuth,loginThunkCreator})(LoginContainer);
+export default connect(mapStateToProps, {setIsAuth,setErrorMsg, loginThunkCreator})(LoginContainer);

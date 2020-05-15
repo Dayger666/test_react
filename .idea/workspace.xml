@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bc65fe9c-06f3-4b75-8a7f-bf331df1acea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +39,34 @@
       <updated>1589377455811</updated>
       <workItem from="1589377470753" duration="6869000" />
       <workItem from="1589462927607" duration="68000" />
-      <workItem from="1589482192537" duration="22123000" />
+      <workItem from="1589482192537" duration="22642000" />
     </task>
+    <task id="LOCAL-00001" summary="some fixed">
+      <created>1589558260367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589558260367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="523" y="14" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589379137992">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="14" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1589379137992" />
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1589558258971">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1589558258971" />
     <state x="406" y="186" key="EditFileWatcherDialog" timestamp="1589378406370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -62,5 +79,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589378369942" />
+    <state x="361" y="142" key="Vcs.Push.Dialog.v2" timestamp="1589558264051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="142" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1589558264051" />
   </component>
 </project>
