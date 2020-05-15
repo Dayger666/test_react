@@ -1,0 +1,56 @@
+.wrapper {
+  background-image: linear-gradient(500.34deg, #020412, #020412 45.41%, rgba(8, 16, 27, 0.5), rgba(8, 16, 27, 0.5) 350%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px; }
+  .wrapper .LoginForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 0.1px solid #808080;
+    width: 400px;
+    height: 400px;
+    flex-direction: column; }
+    .wrapper .LoginForm .form h3 {
+      font-size: 28px;
+      font-weight: 600;
+      text-align: left;
+      width: 200px;
+      padding-left: 20px;
+      color: #353536;
+      float: left; }
+    .wrapper .LoginForm .form .field {
+      width: 100%;
+      margin: 20px 130px 10px 0px;
+      box-sizing: border-box;
+      padding: 12px;
+      font-size: 15px;
+      line-height: 17px;
+      border-radius: 6px;
+      outline: none; }
+    .wrapper .LoginForm .form .sendBtn {
+      font-size: 14px;
+      font-weight: 700;
+      background: #27aae1;
+      border: 1px solid #27aae1;
+      border-radius: 4px;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+      color: #fff;
+      padding: 12px 155px;
+      margin-bottom: 0;
+      margin-top: 30px;
+      cursor: pointer; }
+    .wrapper .LoginForm .alert {
+      margin-top: 10px;
+      max-width: 100%;
+      padding: 10px;
+      height: 42px;
+      border: 1px solid #d6e9c6;
+      border-radius: 4px;
+      color: white;
+      background-color: #FA8072; }
+
+/*# sourceMappingURL=Login.module.css.map */

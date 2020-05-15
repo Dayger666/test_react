@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,KAAK,EAAE,IAAI;EACX,IAAI,EAAE,QAAQ;EACd,QAAQ,EAAE,MAAM;EAChB,SAAS,EAAE,UAAU;EACrB,WAAW,EAAE,uBAAuB;EACpC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM",
+"sources": ["MainPage.module.scss"],
+"names": [],
+"file": "MainPage.module.css"
+}

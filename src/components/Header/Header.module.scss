@@ -1,0 +1,63 @@
+.header{
+  background: #00000a;
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  grid-area: h;
+  .nav{
+    margin-left: 100px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .logoWrapper{
+    }
+    .navItems{
+      display: flex;
+      flex-direction: row;
+      .navItem{
+        font-size: 16px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.85);
+        margin-right: 40px;
+        &:hover{
+          border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+          transition:1s;
+        }
+
+      }
+      & a{
+        text-decoration: none;
+      }
+    }
+    .buttonsWrapper {
+      display: flex;
+      flex-direction: row;
+      .phoneImg {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .logAndOutBtn {
+        padding-left: 30px;
+        button {
+          width: 100px;
+          height: 40px;
+          background: #E9AA09;
+          border-radius: 3px;
+          border-style: none;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          letter-spacing: 0.015em;
+          color: #000000;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,28 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import classes from './App.module.css';
+import {Route} from "react-router-dom";
+import {connect} from "react-redux";
+import LoginContainer from "./components/Login/LoginContainer";
+import HeaderContainer from "./components/Header/HeaderContainer";
+import {setIsAuth} from "./redux/Auth-reducer";
+import MainPage from "./components/MainPage/MainPage";
+import News from "./components/News/News";
+import ProfileContainer from "./components/Profile/ProfileContainer";
 
-class App extends Component {
-  render() {
+
+let App = (props) => {
+    useEffect(() => {
+        {
+            localStorage.getItem('isAuth') === 'true' ? props.setIsAuth(true) : props.setIsAuth(false)
+        }
+    }, []);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+        <div className={classes.appWrapper}>
+            <HeaderContainer/>
+            <div className={classes.content}>
+                <Route path='/home' render={() => <MainPage/>}/>
+                <Route path='/login' render={() => <LoginContainer/>}/>
+                <Route path='/news' render={() => <News/>}/>
+                <Route path='/profile' render={() => <ProfileContainer/>}/>
+            </div>
+        </div>
+    )
+};
 
-export default App;
+
+const mapStateToProps = (state) => {
+    return {
+    }
+};
+export default connect(mapStateToProps, {setIsAuth})(App);
