@@ -8,7 +8,9 @@ import Login from "./Login";
 let LoginContainer = (props) => {
     useEffect(() => {
         {
-            return ()=>{props.setErrorMsg('')}
+            return () => {
+                props.setErrorMsg('')
+            }
         }
     }, []);
     const onSubmit = (formData) => {
@@ -29,4 +31,4 @@ let mapStateToProps = (state) => {
         errorMsg: state.auth.errorMsg,
     }
 };
-export default connect(mapStateToProps, {setIsAuth,setErrorMsg, loginThunkCreator})(LoginContainer);
+export default connect(mapStateToProps, {setIsAuth, setErrorMsg, loginThunkCreator})(LoginContainer);
